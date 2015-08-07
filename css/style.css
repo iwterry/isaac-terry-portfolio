@@ -76,7 +76,7 @@ footer li { /* have links on same line and space between them */
 /* note: styling for all "a" elements occurs in the styling of the sections part of this document */ 
 
 /***************************** styling for smaller devices *************************/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-device-width: 500px) {
 	header {padding: 3em 0em;} /* decrease size of background image in the footer */
 	header p:nth-child(2) {font-size: 3em;} /* decrease font that displays my name */
 	footer ul { padding-left: 0em; } /* horizontally center social links */
