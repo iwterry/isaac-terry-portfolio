@@ -14,7 +14,6 @@ header {
 	padding-bottom: 8em;
 	border-top: 1em solid #69696A;
 	text-align: center;
-	display: none; /* script.js will allow for the header to be shown */
 }
 header p { 
 	margin: 0em; 
@@ -86,7 +85,7 @@ footer li { /* have links on same line and space between them */
 
 @media only screen and (max-device-width: 500px) {
 	/* make text bigger for small mobile devices */
-	h2 { font-size: 1.4em; }
+	h2 { font-size: 1.5em; }
 	p {font-size:1.2em; }
 }
 
