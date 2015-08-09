@@ -81,12 +81,10 @@ footer li { /* have links on same line and space between them */
 	header p:nth-child(2) {font-size: 3em;} /* decrease font that displays my name */
 	footer ul { padding-left: 0em; } /* horizontally center social links */
 	footer li {display: block;} /* the social links should be displayed vertically */	
-	h2 { font-size: 1.5em; }
-	p {font-size:1.2em; }
 }
 
-@media only screen and (max-device-width: 500px) {
-	/* make text bigger for small mobile devices */
-
+@media only screen and (max-device-width: 1000px) {
+	h2 { font-size: 1.5em; }
+	p {font-size:1.2em; }
 }
 
