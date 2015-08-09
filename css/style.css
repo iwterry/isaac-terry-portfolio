@@ -84,3 +84,9 @@ footer li { /* have links on same line and space between them */
 	footer li {display: block;} /* the social links should be displayed vertically */
 }
 
+@media only screen and (max-device-width: 500px) {
+	/* make text bigger for small mobile devices */
+	h2 { font-size: 1.4em; }
+	p {font-size:1.2em; }
+}
+
