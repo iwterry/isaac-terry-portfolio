@@ -1,0 +1,86 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	padding: 0em;
+	margin: 0em; 
+}
+/*########################## styling the  header #############################*/
+header {
+	background-image: url("https://download.unsplash.com/photo-1432691301971-c8b920198bd7");
+	background-size: cover;
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	padding-top: 8em;
+	padding-bottom: 8em;
+	border-top: 1em solid #69696A;
+	text-align: center;
+	display: none; /* script.js will allow for the header to be shown */
+}
+header p { 
+	margin: 0em; 
+	padding; 0em; 
+}
+/* first p element in the header */
+header p:first-child { 
+	font-size: 2em; 
+}
+/* second p element in the header */
+header p:nth-child(2) {
+	font-size: 6em;
+	font-family: Verdana, sans-serif; 
+	margin-top: -.2em; /* get this p element closer vertically to the first p element in the header */
+	text-transform: uppercase; 
+}
+/* h2 element */
+h2 { font-size: 2em; }
+/* h3 element */
+h3{color: #0000FF; } 
+
+
+/*########################## styling the  sections #############################*/
+
+section, .footer-content{ /* this will also style the footer content */
+	width: 35em;
+	max-width: 75%;
+	margin: 0em auto;
+	padding: 0em 2em; 
+}
+/* help to increase vertical spacing */
+section {margin-top: 4em; padding: 0em 2em; }
+#increasePadding {padding-bottom: 2em; }
+#increaseMargin {margin-bottom: 2em; }
+#increasePadding p {margin-bottom: 3em;}
+/* styling the "a" element */
+a {
+	text-decoration: none; 
+	color: #FF0000; 
+}
+a:hover { /* help to indicate a link */
+	text-decoration: underline;
+	font-weight: bold; 
+}
+
+
+/*########################## styling the footer #############################*/
+footer {
+	background-color: rgba(255, 167, 32, 0.4);
+	text-align: center;
+	padding: 3em 0em; 	
+	}	
+footer li { /* have links on same line and space between them */
+	display: inline-block; 
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	text-align: center; 
+}	
+/* note: styling for all "a" elements occurs in the styling of the sections part of this document */ 
+
+/***************************** styling for smaller devices *************************/
+@media only screen and (max-width: 500px) {
+	header {padding: 3em 0em;} /* decrease size of background image in the footer */
+	header p:nth-child(2) {font-size: 3em;} /* decrease font that displays my name */
+	footer ul { padding-left: 0em; } /* horizontally center social links */
+	footer li {display: block;} /* the social links should be displayed vertically */
+	
+}
+

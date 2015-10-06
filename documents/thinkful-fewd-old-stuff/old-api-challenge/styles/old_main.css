@@ -1,0 +1,56 @@
+#title-header {
+	text-align: center; 
+	letter-spacing: 2px; 
+}
+.section-header {
+	margin: 1em; 
+	color: #AB0404; 
+}
+#search-form  {
+	width: 90%; 
+	min-width: 50em;
+	margin: 0em auto; 
+	padding: 2em;
+	border: 1px solid gray; 
+	text-align: center; 
+	overflow: hidden; 
+}
+
+#search-form div {
+	width: 32%;
+	display: inline-block; 
+	vertical-align: top;
+	padding-bottom: 2em; 
+}
+
+#search-form div h3 {
+	margin-top: 0; 
+}
+
+#search-form button {
+	margin: 2em; 
+	float: right; 
+}
+
+.result {
+	width: 30%;
+	display: inline-block; 
+	border: 1px solid black; 
+	margin: 2em 1em; 
+}
+
+@media only screen and (max-width: 750px) {
+	#search-form div {
+		display: block; 
+		width: 100%;
+	}
+	#search-form, .result{
+		width: 80%; 
+		min-width: 0em;
+	}
+	#search-form button{
+		margin-top: 1em; 
+		float: none; 
+	}
+}
+
