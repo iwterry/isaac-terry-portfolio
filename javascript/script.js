@@ -1,9 +1,19 @@
 $(document).ready( function() {
-	$('section h2').siblings().hide(); // only want the questions to be seen for the sections 
-		// give user instructions for how to proceed 
-	alert('Please click on the questions below to expand or collapse the responses to them.');	
-	//allow the content under the main question of each section to expand or collapse by clicking the question  
+	// only want the header one of each section to show when the document is ready 
+	$('section h1').siblings().find('h2').hide(); 
+	// only want the header two to show when header 1 is clicked
+	$('section h2').siblings('p, ol, ul').hide();
+	
+	$('section h1 span, section h2 span').addClass("directional-symbol");
+	$('section h1').find(".directional-symbol").addClass("fa fa-chevron-circle-down");
+ 	$('section h2').find(".directional-symbol").addClass("fa fa-chevron-circle-down");
+	
+	$('section h1').click( function() {
+		$(this).siblings().find('h2').toggle(400);
+		$(this).find(".directional-symbol").toggleClass("fa-chevron-circle-down  fa-chevron-circle-up ");
+	});
 	$('section h2').click( function() {
-		$(this).siblings().toggle(400);
+		$(this).siblings('p, ol, ul').toggle(400);
+		$(this).find(".directional-symbol").toggleClass("fa-chevron-circle-down  fa-chevron-circle-up ");
 	});
 });

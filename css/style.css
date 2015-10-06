@@ -4,6 +4,7 @@ body {
 	padding: 0em;
 	margin: 0em; 
 }
+
 /*########################## styling the  header #############################*/
 header {
 	background-image: url("./images/photo-1432691301971-c8b920198bd7.jpg");
@@ -30,10 +31,7 @@ header p:nth-child(2) {
 	margin-top: -.2em; /* get this p element closer vertically to the first p element in the header */
 	text-transform: uppercase; 
 }
-/* h2 element */
-h2 {font-size: 2em; }
-/* h3 element */
-h3{color: #0000FF; } 
+
 
 
 /*########################## styling the  sections #############################*/
@@ -46,9 +44,8 @@ section, .footer-content{ /* this will also style the footer content */
 }
 /* help to increase vertical spacing */
 section {margin-top: 4em; padding: 0em 2em; }
-#increasePadding {padding-bottom: 2em; }
-#increaseMargin {margin-bottom: 2em; }
-#increasePadding p {margin-bottom: 3em;}
+
+
 /* styling the "a" element */
 a {
 	text-decoration: none; 
@@ -88,8 +85,8 @@ footer li { /* have links on same line and space between them */
 		or smaller window sizes can see the text. I also don't want the text
 		to be too big.
 	*/
-	h2 { font-size: 32px; }
-	h3 {font-size: 26px;}
+	h1 { font-size: 32px; }
+	h2 {font-size: 26px;}
 	p, li, a {font-size: 20px; }
 }
 
